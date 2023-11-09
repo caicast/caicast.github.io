@@ -1,10 +1,7 @@
 /* diagnostic styling */
 @import url(anton.css);
 
-* {
-    outline: 1px dotted gray;
-  }
-  
+* 
   /* layout */
   body {
     display: flex;
