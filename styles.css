@@ -35,7 +35,7 @@
   
   /* face */
   .face {
-    position: absolute;
+    position: center;
     height: 100%;
     width: 100%;
   
@@ -62,5 +62,5 @@
   
   section img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
