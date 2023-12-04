@@ -1,65 +1,67 @@
 /* diagnostic styling */
 @import url(anton.css);
 
-  /* layout */
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: 'Anton-Regular';
-  }
-  
-  /* scene */
-  .scene {
-    width: 300px;
-    height: 400px;
-  
-    /* set perspective   */
-    perspective: 600px;
-  }
-  
-  /* card */
-  .card {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  
-    cursor: pointer;
-    transition: transform 0.5s;
-  
-    /* preserve child 3d   */
-    transform-style: preserve-3d;
-  }
-  
-  /* face */
-  .face {
-    position: center;
-    height: 100%;
-    width: 100%;
-  
-    /* hide back face   */
-    backface-visibility: hidden;
-  }
-  
-  .front {
-    background: lightcoral;
-  }
-  
-  .back {
-    background: mistyrose;
-    /* flip it default   */
-    transform: rotateY(180deg);
-  }
-  
-  /* flip card
-    * toggle with JS
-    */
-  .flipped {
-    transform: rotateY(180deg);
-  }
-  
-  section img {
-    width: 100%;
-    object-fit: cover;
-  }
+/* diagnostic styling */
+
+/* layout */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Anton-Regular';
+}
+
+/* scene */
+.scene {
+  width: 300px;
+  height: 400px;
+
+  /* set perspective   */
+  perspective: 600px;
+}
+
+/* card */
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  cursor: pointer;
+  transition: transform 0.5s;
+
+  /* preserve child 3d   */
+  transform-style: preserve-3d;
+}
+
+/* face */
+.face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  /* hide back face   */
+  backface-visibility: hidden;
+}
+
+.front {
+  background: coral;
+}
+
+.back {
+  background: cornflowerblue;
+  /* flip it default   */
+  transform: rotateY(180deg);
+}
+
+/* flip card
+  * toggle with JS
+  */
+.flipped {
+  transform: rotateY(180deg);
+}
+
+section img {
+  width: 100%;
+  object-fit: cover;
+}
