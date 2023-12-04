@@ -1,4 +1,6 @@
 /* diagnostic styling */
+@import "https://unpkg.com/open-props";
+
 @import url(anton.css);
 
 /* diagnostic styling */
@@ -10,6 +12,7 @@ body {
   align-items: center;
   height: 100vh;
   font-family: 'Anton-Regular';
+  color: black;
 }
 
 /* scene */
@@ -45,11 +48,11 @@ body {
 }
 
 .front {
-  background: coral;
+  background: lightgoldenrodyellow;
 }
 
 .back {
-  background: cornflowerblue;
+  background-image: linear-gradient(to top, black, #0000), var(--noise-5); filter:var(--noise-filter-2);
   /* flip it default   */
   transform: rotateY(180deg);
 }
